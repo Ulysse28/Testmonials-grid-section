@@ -1,0 +1,50 @@
+body{
+    background:#D7DEE6;
+}
+
+.box{
+    width:300px;
+    padding:30px;
+    color:white;
+    border-radius:10px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.jona{
+    background:#49556B;
+}
+
+.daniel{
+    background:url("assets/bg-pattern-quotation.svg"),#733FC8;
+    background-repeat:no-repeat;
+    background-position: 90% 0%;
+    background-size: 40%;
+}
+.jeanne{
+    color:#3E4550;
+    background:white;
+}
+
+.patrick{
+    background:#18202D;
+}
+
+.kira{
+    color:black;
+    background:white;
+}
+
+img{
+    border-radius:50%;
+    margin-right:10px;
+    width:20%;   
+}
+
+.flex{
+    display:flex;
+}
+
+.title{
+    line-height:5px;
+}
