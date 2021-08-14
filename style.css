@@ -1,50 +1,118 @@
-body{
-    background:#D7DEE6;
+/*
+    Testimonials grid section
+    CSS File 
+    By Ulysse Valdenaire
+    14/08/2021
+*/
+
+body {
+  background: #d7dee6;
 }
 
-.box{
-    width:300px;
-    padding:30px;
-    color:white;
-    border-radius:10px;
-    margin:auto;
-    margin-bottom:20px;
+.box {
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-.jona{
-    background:#49556B;
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+  margin-right: 20px;
 }
 
-.daniel{
-    background:url("assets/bg-pattern-quotation.svg"),#733FC8;
-    background-repeat:no-repeat;
-    background-position: 90% 0%;
-    background-size: 40%;
-}
-.jeanne{
-    color:#3E4550;
-    background:white;
+.jona {
+  background: #49556b;
 }
 
-.patrick{
-    background:#18202D;
+.daniel {
+  background: url("assets/bg-pattern-quotation.svg"), #733fc8;
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-size: 40%;
 }
 
-.kira{
-    color:black;
-    background:white;
+.jeanne {
+  color: #3e4550;
+  background: white;
 }
 
-img{
-    border-radius:50%;
-    margin-right:10px;
-    width:20%;   
+.patrick {
+  background: #18202d;
 }
 
-.flex{
-    display:flex;
+.kira {
+  color: black;
+  background: white;
 }
 
-.title{
-    line-height:5px;
+img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 20%;
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  line-height: 5px;
+}
+
+
+/*Pour les versions desktop*/
+@media screen and (min-width: 1025px) {
+
+  .img1 {
+    width: 35%;
+  }
+
+  #container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .box {
+    margin-bottom: 0;
+  }
+
+  .jona {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .daniel {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .jeanne {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .patrick {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .kira {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
 }
